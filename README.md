@@ -43,14 +43,6 @@
 
 ---
 
-## 🖼️ Screenshots
-
-| Register Page | Shorten URL | URL Analytics |
-|---------------|-------------|----------------|
-| _Insert image_ | _Insert image_ | _Insert image_ |
-
----
-
 ## 📁 Folder Structure
 
 ```bash
