@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import ShortenForm from "./ShortenForm";
+import StatsPage from "./StatsPage";
+import { Log } from "./logger"; 
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    Log("frontend", "info", "App", "App loaded successfully 🟢");
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="title">URL Shortener</h1>
+      <ShortenForm />
+      <StatsPage />
     </div>
   );
 }
-
-export default App;
